@@ -1,5 +1,29 @@
-Exercice 5
+<!DOCTYPE html>
+<html lang="fr">
 
-Consignes :
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+    <link rel="stylesheet" href="exercice1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
 
-- Réaliser l'implémentation statique de l'interface
+<body>
+    <header>
+        <h1 class="site-title">Cielbleu</h1>
+        <label for="nameInput">Nom d'utilisateur :</label>
+        <input type="text" id="nameInput" placeholder="Entrez votre nom">
+    </header>
+    <main id="messageContainer">
+        <!-- Les messages apparaîtront ici -->
+    </main>
+    <footer>
+        <input type="text" id="messageInput" placeholder="Entrez votre message" onkeypress="checkEnter(event)">
+        <button onclick="sendMessage()">Envoyer</button>
+    </footer>
+    <script src="exercice1.js"></script>
+</body>
+
+</html>
